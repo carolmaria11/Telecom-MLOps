@@ -15,7 +15,7 @@ y = df['Failure_Within_48Hrs']
 
 X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.25,random_state=42)
 
-model= RandomForestClassifier(n_estimators=150,random_state=42)
+model= RandomForestClassifier(n_estimators=100,random_state=42)
 model.fit(X_train,y_train)
 
 acc = model.score(X_test,y_test)
